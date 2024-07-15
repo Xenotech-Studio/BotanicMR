@@ -9,11 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 508edb944d24e574595a91425051a8e4, type: 3}
-  m_Name: PXR_PlatformSetting
+  m_Script: {fileID: 11500000, guid: f3fe6e38ac2d4c22b04340d6eda2a47e, type: 3}
+  m_Name: MetaXRAudioSettings
   m_EditorClassIdentifier: 
-  entitlementCheckSimulation: 0
-  startTimeEntitlementCheck: 0
-  appID: 32a393e2cfdd2cdafe66023a78ae7f19
-  useHighlight: 1
-  deviceSN: []
+  voiceLimit: 64
