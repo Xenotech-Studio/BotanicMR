@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130ef590413a34a4ea018a487ad3302a, type: 3}
+  m_Name: BranchContainer
+  m_EditorClassIdentifier: 
+  branchPoints: []
+  growDirection: {x: 0, y: 0, z: 0}
+  leaves: []
+  totalLenght: 0
+  fallIteration: 0
+  falling: 0
+  rotationOnFallIteration: {x: 0, y: 0, z: 0, w: 0}
+  branchSense: 0
+  heightParameter: 0
+  randomizeHeight: 0
+  heightVar: 0
+  currentHeight: 0
+  deltaHeight: 0
+  newHeight: 0
+  originPointOfThisBranch:
+    originalPoint: {x: 0, y: 0, z: 0}
+    point: {x: 0, y: 0, z: 0}
+    grabVector: {x: 0, y: 0, z: 0}
+    pointSS: {x: 0, y: 0}
+    length: 0
+    initialGrowDir: {x: 0, y: 0, z: 0}
+    branchContainer: {fileID: 0}
+    index: 0
+    newBranch: 0
+    newBranchNumber: 0
+    radius: 0
+    currentRadius: 0
+    forwardRotation: {x: 0, y: 0, z: 0, w: 0}
+    verticesLoop: []
+    firstVector: {x: 0, y: 0, z: 0}
+    axis: {x: 0, y: 0, z: 0}
+  branchNumber: 0
