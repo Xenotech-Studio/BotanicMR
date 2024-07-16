@@ -10,6 +10,9 @@ namespace Dynamite3D.RealIvy
 		public List<IvyController> ivys;
 		public IvyController prefabIvyController;
 
+		[Range(0, 1f)]
+		public float Size = 1.0f;
+
 		public void CastIvyByPresetName(string presetName, Vector3 position, Quaternion rotation)
 		{
 			IvyPreset ivyPreset = GetPresetByName(presetName);
@@ -18,7 +21,7 @@ namespace Dynamite3D.RealIvy
 
 		public void CastIvy(IvyPreset ivyPreset, Vector3 position, Quaternion rotation)
 		{
-			IvyController selectedIvy = GetFreeIvy();
+			IvyController selectedIvy = null; // = GetFreeIvy();
 			if(selectedIvy == null)
 			{
 				IvyController ivyControllerInstance = Instantiate<IvyController>(prefabIvyController);
@@ -33,9 +36,12 @@ namespace Dynamite3D.RealIvy
             selectedIvy.transform.Rotate(Vector3.right, -90f);
 
 			selectedIvy.ivyParameters = ivyPreset.ivyParameters;
+			selectedIvy.growthParameters.lifetime = 25 ;
+			selectedIvy.growthParameters.growthSpeed = 10f * Size;
 
 			selectedIvy.gameObject.SetActive(true);
 			selectedIvy.StartGrowth();
+			selectedIvy.ImmediateGrowth();
 		}
 
 		public void CastRandomIvy(Vector3 position, Quaternion rotation)

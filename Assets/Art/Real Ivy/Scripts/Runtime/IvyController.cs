@@ -123,7 +123,7 @@ namespace Dynamite3D.RealIvy
 		}
 
 
-		private void UpdateGrowingState(float deltaTime)
+		public void UpdateGrowingState(float deltaTime)
 		{
 			if (!rtIvy.IsGrowingFinished() && !rtIvy.IsVertexLimitReached())
 			{
@@ -137,6 +137,21 @@ namespace Dynamite3D.RealIvy
 				{
 					OnGrowthFinished();
 				}
+			}
+		}
+		
+		public void ImmediateGrowth()
+		{
+			while (!rtIvy.IsGrowingFinished() && !rtIvy.IsVertexLimitReached())
+			{
+				rtIvy.UpdateIvy(0.1f);
+			}
+			
+			state = State.GROWTH_FINISHED;
+
+			if(OnGrowthFinished != null)
+			{
+				OnGrowthFinished();
 			}
 		}
 	}
