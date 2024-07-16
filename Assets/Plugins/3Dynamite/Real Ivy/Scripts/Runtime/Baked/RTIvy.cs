@@ -45,7 +45,7 @@ namespace Dynamite3D.RealIvy
 		protected float leafLengthCorrrectionFactor;
 		protected float currentTimer;
 
-		protected RuntimeGrowthParameters growthParameters;
+		public RuntimeGrowthParameters growthParameters;
 		protected List<Material> leavesMaterials;
 
 		protected RTMeshData[] leavesMeshesByChosenLeaf;
@@ -194,6 +194,8 @@ namespace Dynamite3D.RealIvy
 		public virtual void UpdateIvy(float deltaTime)
 		{
 			UpdateGrowthSpeed();
+			
+			Debug.Log(activeBakedBranches.Count);
 
 
 			for (int i = 0; i < activeBakedBranches.Count; i++)
@@ -354,6 +356,8 @@ namespace Dynamite3D.RealIvy
 
 		public bool IsVertexLimitReached()
 		{
+			Debug.Log(meshBuilder);
+			Debug.Log(meshBuilder.processedMeshData);
 			int numVertices = meshBuilder.processedMeshData.VertexCount() + ivyParameters.sides + 1;
 			bool res = numVertices >= Constants.VERTEX_LIMIT_16;
 			return res;

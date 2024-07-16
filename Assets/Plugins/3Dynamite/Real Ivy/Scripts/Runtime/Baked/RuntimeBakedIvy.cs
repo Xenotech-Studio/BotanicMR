@@ -8,6 +8,8 @@ namespace Dynamite3D.RealIvy
 		{
 			bool res = true;
 
+			Debug.Log(rtIvyContainer.branches);
+			Debug.Log(rtBuildingIvyContainer.branches);
 			if (rtIvyContainer.branches.Count > rtBuildingIvyContainer.branches.Count)
 			{
 				res = false;
