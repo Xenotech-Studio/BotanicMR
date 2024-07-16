@@ -3,31 +3,51 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Weapon
+  - Enemy
+  - SliceUI
+  - magic
+  - magiccc
+  - right
+  - "\u6389\u84DD\u6E23"
+  - "\u6389\u6A59\u6E23"
+  - HitBox
+  - Tip
+  - Bodypart
+  - Handle
+  - CylinderHealth
+  - Fade
+  - Hands
+  - MR
+  - mainAttacker
+  - WarpSphere
+  - RogueLevelManager
+  - Bullet
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PlayerHead
   - Water
   - UI
+  - Enemy
+  - Player
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - MRControl
+  - MRCulling
+  - MRCulledScene
+  - Display_3_BG
+  - Display_4_BG
+  - Z-Clear
+  - PostProcessingOutput
+  - MRShadowing
+  - NeedPostProcessing
+  - IgnoreMainLight
+  - Stencil-2
+  - Stencil-2-mask
+  - WallDecal
   - 
   - 
   - 
