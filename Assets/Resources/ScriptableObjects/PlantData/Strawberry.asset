@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3255db3554287594c90ee6def03a1a7e, type: 3}
   m_Name: Strawberry
   m_EditorClassIdentifier: 
-  Id: 0
+  Id: 1
   Name: Sample Plant
   BotanicalName: exempla
   Description: Sample Description
+  Price: 0
   Prefab: {fileID: 0}
   SunlightDegree: 0.7
   SunlightDescription: Partial Sunlight
@@ -23,3 +24,10 @@ MonoBehaviour:
   WateringDescription: Every Two Weeks
   TemperatureDegree: 0.55
   TemperatureDescription: 20 - 22
+  Tutorial:
+  - Description: "\u628A\u63D2\u679D\u526A\u5230\u957F\u5EA65-10cm\u4E4B\u95F4\u3002\n\u53BB\u6389\u63D2\u679D\u4E0B\u90E8\u51E0\u7247\u53F6\u5B50\uFF0C\u4EC5\u7559\u4E24\u7247\u6216\u8005\u4E09\u7247\u6700\u4E0A\u7684\u5F69\u53F6\u3002\n\u5C06\u63D2\u679D\u7684\u4E0B\u7AEF\u653E\u5728\u6E05\u6C34\u4E2D\uFF0C\u6D78\u6DC05-10\u5929\u3002\n\u7B49\u63D2\u679D\u957F\u51FA\u7EA62-3cm\u7684\u6839\u65F6\uFF0C\u5C31\u53EF\u4EE5\u6266\u63D2\u5230\u571F\u4E2D\u57F9\u517B\u4E86\u3002"
+    ShortDescription: "\u62FE\u8D77\u526A\u5200\uFF0C\u9760\u8FD1\u690D\u682A\u5E76\u6309\u4E0B\u6273\u673A\u952E\u4EE5\u526A\u51FA\u63D2\u679D"
+  - Description: 
+    ShortDescription: "\u5C06\u6210\u529F\u751F\u6839\u7684\u690D\u682A\u79FB\u683D\u5230\u571F\u4E2D\u57F9\u517B"
+  - Description: 
+    ShortDescription: "\u5C06\u76C6\u683D\u79FB\u5165\u9634\u6697\u5904"

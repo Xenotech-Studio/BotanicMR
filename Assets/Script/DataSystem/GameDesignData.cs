@@ -12,7 +12,7 @@ namespace DataSystem
             set => _plantData = value;
         }
         private static Dictionary<int, PlantData> _plantData;
-        public static PlantData GetPlantData(int id) => _plantData.TryGetValue(id, out var data) ? data : null;
+        public static PlantData GetPlantData(int id) => PlantData.TryGetValue(id, out var data) ? data : null;
 
         private static Dictionary<int, PlantData> GeneratePlantData()
         {
