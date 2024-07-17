@@ -19,6 +19,12 @@ namespace Dynamite3D.RealIvy
 		public float BakeDelay = 0.5f;
 		public IvyCaster ivyCaster;
 		public IvyPreset SelectedIvy;
+
+		public void SetProgress(float progress)
+		{
+			GrowthPercentage = progress;
+			BakeIvy();
+		}
 		
 		private void OnEnable()
 		{
@@ -30,6 +36,7 @@ namespace Dynamite3D.RealIvy
 		
 		private void BakeIvy()
 		{
+			ivyCaster.ClearAllIvy();
 			ivyCaster.CastIvy(SelectedIvy, transform.position, transform.rotation, GrowthPercentage);
 		}
 	}

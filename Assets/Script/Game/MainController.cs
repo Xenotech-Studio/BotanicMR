@@ -6,7 +6,11 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class MainController : MonoBehaviour
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
+public partial class MainController : MonoBehaviour
 {
     public UnityEvent Initialization;
     public UnityEvent FirstTimeEnterGame;
@@ -44,3 +48,33 @@ public class MainController : MonoBehaviour
         transform.Find("Workbench").gameObject.SetActive(true);
     }
 }
+
+#if UNITY_EDITOR
+[CustomEditor(typeof(MainController))]
+public class MainControllerEditor : UnityEditor.Editor
+{
+    public override void OnInspectorGUI()
+    {
+        DrawDefaultInspector();
+        MainController mainController = (MainController) target;
+        
+        // draw header "tools"
+        GUILayout.Space(10);
+        GUILayout.Label("Actions", EditorStyles.boldLabel);
+        
+        if (GUILayout.Button("Restore All Plants"))
+        {
+            mainController.RestoreAllPlants();
+        }
+        
+        GUILayout.Space(10);
+        GUILayout.Label("Plants", EditorStyles.boldLabel);
+        foreach (PlantAgent plant in MainController.Plants)
+        {
+            GUI.enabled = false;
+            EditorGUILayout.ObjectField("Plant", plant, typeof(PlantAgent), false);
+            GUI.enabled = true;
+        }
+    }
+}
+#endif
