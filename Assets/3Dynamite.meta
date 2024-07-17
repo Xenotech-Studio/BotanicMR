@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/3Dynamite.meta
 guid: f980faf1753c3b94aa87680c5734e36c
+========
+guid: ba1c42a312fd6464dab1e77101e5d47b
+>>>>>>>> b4e763b (导入大量剩余素材+场景搭建):Assets/Art/Greenhouse.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
