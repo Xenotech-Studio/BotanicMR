@@ -6,7 +6,7 @@ namespace DataSystem
 {
     public abstract partial class WriteableData : IWriteableData
     {
-        public abstract string Path { get; }
+        [JsonIgnore] public abstract string Path { get; }
 
         public void Serialization()
         {

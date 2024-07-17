@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,12 @@ namespace DataSystem
         }
         private static GameProgressData _instance;
 
+        public XenoSDK.BuildingBlocks.GrabPlace.Pose WorkbenchPose;
+        
         public List<PlantProgressData> PlantProgressDataList = new List<PlantProgressData>();
+        
+        public int Money;
+        
+        public DateTime LastLoginTime;
     }
 }

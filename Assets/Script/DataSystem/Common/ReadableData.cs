@@ -7,7 +7,7 @@ namespace DataSystem
 {
     public abstract partial class ReadableData
     {
-        public abstract string Path { get; }
+        [JsonIgnore] public abstract string Path { get; }
 
         public virtual T DeSerialization<T>() where T : new()
         {

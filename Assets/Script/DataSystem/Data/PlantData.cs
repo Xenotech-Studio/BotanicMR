@@ -13,6 +13,8 @@ namespace DataSystem
         public string BotanicalName;
         [Multiline] public string Description;
 
+        public int Price;
+
         public GameObject Prefab;
 
         [Range(0, 1)] public float SunlightDegree;

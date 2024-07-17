@@ -7,14 +7,18 @@ namespace DataSystem
 {
     public abstract partial class ReadableAndWriteableData : IReadableData , IWriteableData
     {
-        public abstract string Path { get; }
+        [JsonIgnore] public abstract string Path { get; }
 
         public void Serialization()
         {
             if (File.Exists(Path)) File.Delete(Path);
             File.Create(Path).Dispose();
 
-            var settings = new JsonSerializerSettings() { TypeNameHandling = TypeNameHandling.Auto };
+            var settings = new JsonSerializerSettings()
+            {
+                TypeNameHandling = TypeNameHandling.Auto,
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            };
             File.WriteAllText(Path, JsonConvert.SerializeObject(this, Formatting.Indented, settings));
         }
         
@@ -22,15 +26,29 @@ namespace DataSystem
         {
             if (string.IsNullOrEmpty(Path) || !File.Exists(Path)) return null;
 
-            var settings = new JsonSerializerSettings() { TypeNameHandling = TypeNameHandling.Auto };
-            return JsonConvert.DeserializeObject<ReadableData>(File.ReadAllText(Path), settings);
+            var file = File.ReadAllText(Path);
+            if (string.IsNullOrEmpty(file)) return null;
+
+            var settings = new JsonSerializerSettings()
+            {
+                TypeNameHandling = TypeNameHandling.Auto,
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            };
+            return JsonConvert.DeserializeObject<ReadableData>(file, settings);
         }
 
         public virtual T DeSerialization<T>() where T : new()
         {
             if (string.IsNullOrEmpty(Path) || !File.Exists(Path)) return new T();
+            
+            var file = File.ReadAllText(Path);
+            if (string.IsNullOrEmpty(file)) return new T();
 
-            var settings = new JsonSerializerSettings() { TypeNameHandling = TypeNameHandling.Auto };
+            var settings = new JsonSerializerSettings()
+            {
+                TypeNameHandling = TypeNameHandling.Auto,
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            };
             return JsonConvert.DeserializeObject<T>(File.ReadAllText(Path), settings);
         }
 
