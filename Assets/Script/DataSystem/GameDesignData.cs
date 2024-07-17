@@ -4,15 +4,27 @@ using UnityEngine;
 
 namespace DataSystem
 {
-    public class GameDesignData : ReadableData
+    public class GameDesignData
     {
-        public override string Path => System.IO.Path.Combine(Application.dataPath, "Resources/GameDesignData.json");
-
-        public static GameDesignData Instance
+        public static Dictionary<int, PlantData> PlantData
         {
-            get => _instance ??= new GameDesignData().DeSerialization<GameDesignData>();
-            set => _instance = value;
+            get => _plantData ??= GeneratePlantData();
+            set => _plantData = value;
         }
-        private static GameDesignData _instance;
+        private static Dictionary<int, PlantData> _plantData;
+        public static PlantData GetPlantData(int id) => _plantData.TryGetValue(id, out var data) ? data : null;
+
+        private static Dictionary<int, PlantData> GeneratePlantData()
+        {
+            var data = Resources.LoadAll<PlantData>("ScriptableObjects/PlantData");
+            var dic = new Dictionary<int, PlantData>();
+
+            foreach (var p in data)
+            {
+                dic.Add(p.Id, p);
+            }
+
+            return dic;
+        }
     }
 }
