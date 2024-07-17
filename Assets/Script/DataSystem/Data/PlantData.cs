@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -25,5 +26,14 @@ namespace DataSystem
         
         [Range(0, 1)] public float TemperatureDegree;
         public string TemperatureDescription;
+
+        public List<PlantTutorialData> Tutorial;
+    }
+
+    [Serializable]
+    public struct PlantTutorialData
+    {
+        [Multiline] public string Description;
+        public string ShortDescription;
     }
 }
