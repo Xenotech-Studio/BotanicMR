@@ -538,6 +538,11 @@ PrefabInstance:
       propertyPath: OnGrabStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6247326252358902240}
+    - target: {fileID: 6288126351467985944, guid: cf535aadf89a02443afc84a76c3398b5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3e8aef25aceb242758ab79fdb538080d, type: 2}
     - target: {fileID: 9009061407423551634, guid: cf535aadf89a02443afc84a76c3398b5,
         type: 3}
       propertyPath: m_Name
