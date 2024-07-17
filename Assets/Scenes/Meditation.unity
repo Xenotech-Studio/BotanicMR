@@ -7699,7 +7699,7 @@ Transform:
   - {fileID: 610254617}
   - {fileID: 244910286}
   - {fileID: 1342138543}
-  - {fileID: 1448754126}
+  - {fileID: 1637770338}
   - {fileID: 1948490917}
   - {fileID: 541067414}
   - {fileID: 676740445}
@@ -55623,7 +55623,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1448754126}
-  - component: {fileID: 1448754127}
   - component: {fileID: 1448754125}
   - component: {fileID: 1448754124}
   - component: {fileID: 1448754123}
@@ -55668,7 +55667,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
   m_Intensity: 0.1
   m_Range: 10
   m_SpotAngle: 30
@@ -55744,37 +55743,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448754122}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.43891665, y: -0.4420809, z: -0.5543927, w: 0.55187446}
-  m_LocalPosition: {x: 1.1022837, y: -1.271571, z: -3.4978406}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.16, y: -0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 493629405}
-  m_LocalEulerAnglesHint: {x: 359.67233, y: 282.9345, z: 270.00012}
---- !u!114 &1448754127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1448754122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 260e099e457b8e8488aa1241d3746054, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FollowedTransform: {fileID: 6141583491479739678}
-  FixPositionX: 0
-  FixPositionY: 0
-  FixPositionZ: 0
-  FixRotationY: 0
-  FixRotationX: 0
-  FixRotationZ: 0
-  CompletelyFollow: 1
-  Validated: 1
-  ForceFix: 0
-  DoFixScale: 0
-  FixedScale: {x: 1, y: 1, z: 1}
+  m_Father: {fileID: 1637770338}
+  m_LocalEulerAnglesHint: {x: -0, y: 0, z: 0}
 --- !u!1001 &1476670232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56750,6 +56725,63 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1636102732}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1637770337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1637770338}
+  - component: {fileID: 1637770339}
+  m_Layer: 0
+  m_Name: Light A Mover
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1637770338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637770337}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.43891665, y: -0.4420809, z: -0.5543927, w: 0.55187446}
+  m_LocalPosition: {x: 1.1022837, y: -1.271571, z: -3.4978406}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1448754126}
+  m_Father: {fileID: 493629405}
+  m_LocalEulerAnglesHint: {x: 359.67233, y: 282.9345, z: 270.00012}
+--- !u!114 &1637770339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637770337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 260e099e457b8e8488aa1241d3746054, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FollowedTransform: {fileID: 6141583491479739678}
+  FixPositionX: 0
+  FixPositionY: 0
+  FixPositionZ: 0
+  FixRotationY: 1
+  FixRotationX: 1
+  FixRotationZ: 1
+  CompletelyFollow: 0
+  Validated: 1
+  ForceFix: 0
+  DoFixScale: 0
+  FixedScale: {x: 1, y: 1, z: 1}
 --- !u!1 &1644901197
 GameObject:
   m_ObjectHideFlags: 0
