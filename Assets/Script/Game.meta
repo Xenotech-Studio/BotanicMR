@@ -1,7 +1,12 @@
 fileFormatVersion: 2
-guid: a732eb75b1cf22943b3b533efe15fc30
+<<<<<<<< Updated upstream:Assets/Script/Game.meta
+guid: cf6165bec918ddd4e834c37fd1250e3a
 folderAsset: yes
 DefaultImporter:
+========
+guid: 828776335cb35bf4f98976b343b0e06a
+PrefabImporter:
+>>>>>>>> Stashed changes:Assets/Art/TheGamingPeople/Shed Bridge Tools and Fences/Prefabs/ShovelParent.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

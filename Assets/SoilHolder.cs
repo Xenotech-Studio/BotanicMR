@@ -8,12 +8,17 @@ public class SoilHolder : MonoBehaviour
     public GameObject Soil2;
     public GameObject Soil3;
     public int SoilNum;
+    public bool SoilFull;
 
     // Update is called once per frame
     void Update()
     {
         if (SoilNum >=1) Soil1.SetActive(true);
         if (SoilNum >= 2) Soil2.SetActive(true);
-        if (SoilNum >= 3) Soil3.SetActive(true);
+        if (SoilNum >= 3)
+        {
+            Soil3.SetActive(true);
+            SoilFull = true;
+        }
     }
 }
