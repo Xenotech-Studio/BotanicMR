@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 6110477874469653084}
   - component: {fileID: 1510251424050210698}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -305,7 +305,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -7}
+  m_AnchoredPosition: {x: 0, y: -800}
   m_SizeDelta: {x: 402, y: 183}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1725950282182799286
@@ -693,7 +693,7 @@ GameObject:
   - component: {fileID: 8792507120889215214}
   - component: {fileID: 6037966720319770996}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1514,6 +1514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5381188351740383484}
+  - component: {fileID: 2261800107896806118}
   m_Layer: 0
   m_Name: Plant Info Panel
   m_TagString: Untagged
@@ -1542,6 +1543,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1152, y: 2048}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2261800107896806118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3567237186559995983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5c94077d07464b4dac9ce2c8909cfb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlantData: {fileID: 0}
 --- !u!1 &3588675606937597009
 GameObject:
   m_ObjectHideFlags: 0
@@ -1554,7 +1568,7 @@ GameObject:
   - component: {fileID: 1399115000047858926}
   - component: {fileID: 3183265698144271919}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2576,7 +2590,7 @@ GameObject:
   - component: {fileID: 7295954039932909182}
   - component: {fileID: 9055948980854630715}
   m_Layer: 0
-  m_Name: LatinName
+  m_Name: BotanicalName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3099,7 +3113,7 @@ GameObject:
   - component: {fileID: 5174249809940147705}
   - component: {fileID: 8982195271756612968}
   m_Layer: 0
-  m_Name: Lorem
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
