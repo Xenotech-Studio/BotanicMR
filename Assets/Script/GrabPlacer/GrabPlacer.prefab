@@ -181,6 +181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5968013283445249026}
   - component: {fileID: 6247326252358902240}
+  - component: {fileID: 6537153963741722505}
   m_Layer: 0
   m_Name: GrabPlacer
   m_TagString: Untagged
@@ -221,6 +222,56 @@ MonoBehaviour:
   GrabHandle: {fileID: 2525594137052931051}
   PivotTransform: {fileID: 5579414323213894899}
   ResultTransform: {fileID: 5422747657614863940}
+--- !u!114 &6537153963741722505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048878711429896042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19114d7929014d8393b1b52af2528593, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnLeftIndexTriggerClick:
+    m_PersistentCalls:
+      m_Calls: []
+  OnRightIndexTriggerClick:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLeftMiddleTriggerClick:
+    m_PersistentCalls:
+      m_Calls: []
+  OnRightMiddleTriggerClick:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6247326252358902240}
+        m_TargetAssemblyTypeName: XenoSDK.BuildingBlocks.GrabPlace.GrabPlacer, Assembly-CSharp
+        m_MethodName: Confirm
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnBClick:
+    m_PersistentCalls:
+      m_Calls: []
+  OnYClick:
+    m_PersistentCalls:
+      m_Calls: []
+  OnXClick:
+    m_PersistentCalls:
+      m_Calls: []
+  ListenerTypes: 05000000
+  UseDeveloperKeyboard: 1
 --- !u!1 &4130043702031436133
 GameObject:
   m_ObjectHideFlags: 0
