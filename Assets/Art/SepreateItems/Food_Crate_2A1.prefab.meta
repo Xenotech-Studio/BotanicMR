@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Art/SepreateItems/Food_Crate_2A1.prefab.meta
 guid: 991b484300bab60499a25834f1c9851f
+========
+guid: 548f1b75d5cdc8446ac14373f156c1af
+>>>>>>>> c0a9607 (部分道具加入all assets和货摊模型):Assets/Art/SepreateItems/Marketshelf.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 

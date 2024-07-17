@@ -1,7 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Art/Store.meta
 guid: 8d9364ef1828847bc801f34be344b384
 folderAsset: yes
 DefaultImporter:
+========
+guid: 991b484300bab60499a25834f1c9851f
+PrefabImporter:
+>>>>>>>> c0a9607 (部分道具加入all assets和货摊模型):Assets/Art/SepreateItems/Food_Crate_2A1.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
