@@ -121,13 +121,13 @@ public partial class MainController : MonoBehaviour
         Plants.Remove(plant);
     }
     
-    public void SpawnNewPlant(string plantId, float progress = 0, Vector3 offset = new Vector3())
+    public GameObject SpawnNewPlant(string plantId, float progress = 0, Vector3 offset = new Vector3())
     {
         GameObject plantPrefab = PlantPrefabs.Find(plantPrefab => plantPrefab.PlantId == plantId).gameObject;
         if (plantPrefab == null)
         {
             Debug.LogError($"Plant prefab not found: {plantId}");
-            return;
+            return null;
         }
         
         GameObject plantObj = Instantiate(plantPrefab, Vector3.zero, Quaternion.identity);
@@ -141,6 +141,8 @@ public partial class MainController : MonoBehaviour
         plant.PlantUID = Guid.NewGuid().ToString();
         
         Plants.Add(plant);
+        
+        return plantObj;
     }
     
     public void SpawnNewPlant10PercentGrowth(string plantId) => SpawnNewPlant(plantId, 0.1f);
