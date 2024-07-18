@@ -357,6 +357,76 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 725020535267772093, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: SoilFulled.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 725020535267772093, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: SoilFulled.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 725020535267772093, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: SoilFulled.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 725020535267772093, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: SoilFulled.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 725020535267772093, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: SoilFulled.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 725020535267772093, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: SoilFulled.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 725020535267772093, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: SoilFulled.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetStepTo
+      objectReference: {fileID: 0}
+    - target: {fileID: 725020535267772093, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: SoilFulled.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 725020535267772093, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: SoilFulled.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PlantController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 725020535267772093, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: SoilFulled.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 725020535267772093, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: SoilFulled.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 725020535267772093, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: SoilFulled.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 725020535267772093, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: SoilFulled.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 725020535267772093, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: SoilFulled.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1311455416050292035, guid: 4c6420b69679dfe42b832d1b9bed2264,
         type: 3}
       propertyPath: m_IsActive

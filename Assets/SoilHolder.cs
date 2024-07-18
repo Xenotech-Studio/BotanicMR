@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SoilHolder : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class SoilHolder : MonoBehaviour
     public GameObject Soil3;
     public int SoilNum;
     public bool SoilFull;
+    public UnityEvent SoilFulled;
 
     // Update is called once per frame
     void Update()
@@ -19,6 +21,7 @@ public class SoilHolder : MonoBehaviour
         {
             Soil3.SetActive(true);
             SoilFull = true;
+            SoilFulled.Invoke();
         }
     }
 }
