@@ -323,11 +323,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 179156144, guid: 4c6420b69679dfe42b832d1b9bed2264, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 179156144, guid: 4c6420b69679dfe42b832d1b9bed2264, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.105
       objectReference: {fileID: 0}
     - target: {fileID: 179156144, guid: 4c6420b69679dfe42b832d1b9bed2264, type: 3}
       propertyPath: m_LocalRotation.w
@@ -357,11 +357,61 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1311455416050292035, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350269139433631925, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790980890025900814, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f58be2cef3185c8498b519cb5b5700c4, type: 2}
+    - target: {fileID: 5285706809178402252, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6704903786757480788, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f58be2cef3185c8498b519cb5b5700c4, type: 2}
+    - target: {fileID: 7331803887761019649, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7556886082968785129, guid: 4c6420b69679dfe42b832d1b9bed2264,
         type: 3}
       propertyPath: m_Name
       value: FlowerPot1
       objectReference: {fileID: 0}
+    - target: {fileID: 7556886082968785129, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7994289368836033340, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7996213281322277662, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8796369679290219457, guid: 4c6420b69679dfe42b832d1b9bed2264,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f58be2cef3185c8498b519cb5b5700c4, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -122,7 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
   m_Colliders:
-  - {fileID: 801125187490229008}
+  - {fileID: 4494473676428069695}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -364,17 +364,176 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1742647763144210, guid: 723f84f13904f514ab8f3ca3d5b57c77,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2890586087448995576}
+    - targetCorrespondingSourceObject: {fileID: 1742647763144210, guid: 723f84f13904f514ab8f3ca3d5b57c77,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3374840307584237270}
+    - targetCorrespondingSourceObject: {fileID: 1742647763144210, guid: 723f84f13904f514ab8f3ca3d5b57c77,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 453353376114142356}
+    - targetCorrespondingSourceObject: {fileID: 1742647763144210, guid: 723f84f13904f514ab8f3ca3d5b57c77,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2463786569346978025}
+    - targetCorrespondingSourceObject: {fileID: 1673928966916850, guid: 723f84f13904f514ab8f3ca3d5b57c77,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4494473676428069695}
   m_SourcePrefab: {fileID: 100100000, guid: 723f84f13904f514ab8f3ca3d5b57c77, type: 3}
---- !u!65 &801125187490229008 stripped
-BoxCollider:
-  m_CorrespondingSourceObject: {fileID: 1857228176114097535, guid: 723f84f13904f514ab8f3ca3d5b57c77,
-    type: 3}
-  m_PrefabInstance: {fileID: 1357861893445367407}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1357777727662120915 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4454761049188796, guid: 723f84f13904f514ab8f3ca3d5b57c77,
     type: 3}
   m_PrefabInstance: {fileID: 1357861893445367407}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1359500357648678045 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1673928966916850, guid: 723f84f13904f514ab8f3ca3d5b57c77,
+    type: 3}
+  m_PrefabInstance: {fileID: 1357861893445367407}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &4494473676428069695
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359500357648678045}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300006, guid: 74c4d2f25effb1341bf6058acf008695, type: 3}
+--- !u!1 &1359569077504161917 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1742647763144210, guid: 723f84f13904f514ab8f3ca3d5b57c77,
+    type: 3}
+  m_PrefabInstance: {fileID: 1357861893445367407}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2890586087448995576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359569077504161917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9ac3e0d9f6856044be1d0dcb8b39a58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScissorPrssed: 0
+--- !u!65 &3374840307584237270
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359569077504161917}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1, y: 0.3, z: 0.05}
+  m_Center: {x: 0, y: 0.42, z: 0}
+--- !u!54 &453353376114142356
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359569077504161917}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &2463786569346978025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359569077504161917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19114d7929014d8393b1b52af2528593, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnLeftIndexTriggerClick:
+    m_PersistentCalls:
+      m_Calls: []
+  OnRightIndexTriggerClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2890586087448995576}
+        m_TargetAssemblyTypeName: Scissor, Assembly-CSharp
+        m_MethodName: ScissorPress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnLeftMiddleTriggerClick:
+    m_PersistentCalls:
+      m_Calls: []
+  OnRightMiddleTriggerClick:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAClick:
+    m_PersistentCalls:
+      m_Calls: []
+  OnBClick:
+    m_PersistentCalls:
+      m_Calls: []
+  OnYClick:
+    m_PersistentCalls:
+      m_Calls: []
+  OnXClick:
+    m_PersistentCalls:
+      m_Calls: []
+  ListenerTypes: 02000000
+  UseDeveloperKeyboard: 1
