@@ -15,7 +15,12 @@ public class PlantController : MonoBehaviour
     public PlantTutPanelController TutController;
 
     public int CurrentStep = 0;
-    
+
+    private void Awake()
+    {
+        Initialization();
+    }
+
     public void Initialization(int id)
     {
         var data = GameDesignData.GetPlantData(id);
@@ -34,7 +39,9 @@ public class PlantController : MonoBehaviour
     {
         if (Data == null) return;
         
+        InfoController.gameObject.SetActive(true);
         InfoController.SetPlantData(Data);
+        
         TutController.SetPlantData(Data);
         
         InfoController.gameObject.SetActive(true);

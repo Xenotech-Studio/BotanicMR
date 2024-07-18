@@ -18,7 +18,7 @@ public partial class MainController : MonoBehaviour
         if (obj.attachedRigidbody != null && obj.attachedRigidbody.transform.TryGetComponent<PlantController>(out var controller))
         {
             controller.transform.SetParent(transform.Find("Flow/Tutorial"));
-            controller.transform.localPosition = new Vector3(0, 0, -0.25f);
+            controller.transform.localPosition = new Vector3(0, 0, -0.15f);
             controller.transform.localRotation = Quaternion.Euler(0, 0, 0);
             
             transform.Find("Flow").GetComponent<VXR_Flow>().GoToID("tutorial");

@@ -27,6 +27,7 @@ public partial class MainController : MonoBehaviour
     {
         // RecoverPose();
         
+        AudioManager.Instance.PlayAmbient();
         FirstTimeEnterGame?.Invoke();
     }
 

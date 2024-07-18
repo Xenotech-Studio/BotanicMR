@@ -64,6 +64,7 @@ namespace UI
         public void SetPlantData(PlantData plantData)
         {
             PlantData = plantData;
+            Refresh();
         }
     }
 }
