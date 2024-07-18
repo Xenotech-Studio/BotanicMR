@@ -5,6 +5,7 @@ using DataSystem;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using Versee.UI;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -48,6 +49,17 @@ public partial class MainController : MonoBehaviour
         transform.rotation = GameProgressData.Instance.WorkbenchPose.Rotation;
         
         transform.Find("Workbench").gameObject.SetActive(true);
+        transform.Find("Flow").GetComponent<VXR_Flow>().GoToID("second_time_start");
+    }
+
+    public void StartPlanting()
+    {
+        var flow = transform.Find("Flow").GetComponent<VXR_Flow>();
+            
+        if (flow._current == 1)
+        {
+            flow.GoToID("plant_selection");
+        }
     }
 }
 
