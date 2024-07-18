@@ -7,15 +7,15 @@ using UnityEngine.Events;
 public class TriggerEnterListener : MonoBehaviour
 {
     public Collider Head;
-    public UnityEvent OnEnter;
-    public UnityEvent OnExit;
+    public UnityEvent<Collider> OnEnter;
+    public UnityEvent<Collider> OnExit;
     
     public void OnTriggerEnter(Collider other)
     {
         Debug.Log("OnTriggerEnter", this);
         if (other == Head)
         {
-            OnEnter.Invoke();
+            OnEnter.Invoke(other);
         }
     }
     
@@ -24,7 +24,7 @@ public class TriggerEnterListener : MonoBehaviour
         Debug.Log("OnTriggerExit", this);
         if (other == Head)
         {
-            OnExit.Invoke();
+            OnExit.Invoke(other);
         }
     }
 }

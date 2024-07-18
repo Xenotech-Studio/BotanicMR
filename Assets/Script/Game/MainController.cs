@@ -14,6 +14,8 @@ public partial class MainController : MonoBehaviour
 {
     public UnityEvent Initialization;
     public UnityEvent FirstTimeEnterGame;
+
+    public Transform NewItemSpawnPosition;
     
     private void Awake()
     {
@@ -62,13 +64,19 @@ public class MainControllerEditor : UnityEditor.Editor
         GUILayout.Space(10);
         GUILayout.Label("Actions", EditorStyles.boldLabel);
         
+        GUI.enabled = EditorApplication.isPlaying;
         if (GUILayout.Button("Restore All Plants"))
         {
             mainController.RestoreAllPlants();
         }
+        GUI.enabled = true;
         
         GUILayout.Space(10);
         GUILayout.Label("Plants", EditorStyles.boldLabel);
+        if (MainController.Plants.Count == 0)
+        {
+            GUILayout.Label("No plants (or not in playmode)", EditorStyles.boldLabel);
+        }
         foreach (PlantAgent plant in MainController.Plants)
         {
             GUI.enabled = false;
