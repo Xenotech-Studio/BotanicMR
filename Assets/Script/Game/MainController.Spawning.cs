@@ -32,7 +32,7 @@ public partial class MainController : MonoBehaviour
         {
             try
             {
-                spawnedObject = SpawnNewPlant(plantAgent.PlantId, 0.1f, relativePosition);
+                spawnedObject = SpawnNewPlant(plantAgent.PlantId, 0.5f, relativePosition);
             }
             catch
             { }

@@ -45,10 +45,10 @@ public class StoreController : MonoBehaviour
                 {
                     if (Items[i] == item)
                     {
-                        OnBuyObject?.Invoke(CorresponingBuyResult[i].gameObject);
                         other.attachedRigidbody.transform.parent = ItemsParent;
                         other.attachedRigidbody.transform.localPosition = _poses[i].Position;
                         other.attachedRigidbody.transform.localRotation = _poses[i].Rotation;
+                        OnBuyObject?.Invoke(CorresponingBuyResult[i].gameObject);
                     }
                 }
             }
