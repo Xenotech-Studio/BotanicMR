@@ -21,7 +21,10 @@ public partial class MainController : MonoBehaviour
     private void Awake()
     {
         Initialization?.Invoke();
-        
+    }
+
+    private void Start()
+    {
         RecoverPose();
     }
 
