@@ -30,6 +30,16 @@ public class PlantController : MonoBehaviour
         InfoController.gameObject.SetActive(true);
     }
 
+    public void Initialization()
+    {
+        if (Data == null) return;
+        
+        InfoController.SetPlantData(Data);
+        TutController.SetPlantData(Data);
+        
+        InfoController.gameObject.SetActive(true);
+    }
+
     public void StartTutorial()
     {
         WorkbenchCanvasController.HideSubtitle();
