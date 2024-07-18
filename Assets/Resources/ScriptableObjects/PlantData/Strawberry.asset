@@ -13,21 +13,30 @@ MonoBehaviour:
   m_Name: Strawberry
   m_EditorClassIdentifier: 
   Id: 1
-  Name: Sample Plant
-  BotanicalName: exempla
-  Description: Sample Description
-  Price: 0
+  Name: Strawberry
+  BotanicalName: Fragaria ananassa
+  Description: The strawberry is a widely grown hybrid species of the genus Fragaria
+    in the rose family, Rosaceae, collectively known as the strawberries, which are
+    cultivated worldwide for their fruit.
+  Price: 20
   Prefab: {fileID: 0}
-  SunlightDegree: 0.7
-  SunlightDescription: Partial Sunlight
-  WateringDegree: 0.2
-  WateringDescription: Every Two Weeks
-  TemperatureDegree: 0.55
-  TemperatureDescription: 20 - 22
+  SunlightDegree: 1
+  SunlightDescription: Full Sunlight
+  WateringDegree: 0.7
+  WateringDescription: Twice a Week
+  TemperatureDegree: 0.65
+  TemperatureDescription: "18 ~ 27\u2103"
   Tutorial:
-  - Description: "\u628A\u63D2\u679D\u526A\u5230\u957F\u5EA65-10cm\u4E4B\u95F4\u3002\n\u53BB\u6389\u63D2\u679D\u4E0B\u90E8\u51E0\u7247\u53F6\u5B50\uFF0C\u4EC5\u7559\u4E24\u7247\u6216\u8005\u4E09\u7247\u6700\u4E0A\u7684\u5F69\u53F6\u3002\n\u5C06\u63D2\u679D\u7684\u4E0B\u7AEF\u653E\u5728\u6E05\u6C34\u4E2D\uFF0C\u6D78\u6DC05-10\u5929\u3002\n\u7B49\u63D2\u679D\u957F\u51FA\u7EA62-3cm\u7684\u6839\u65F6\uFF0C\u5C31\u53EF\u4EE5\u6266\u63D2\u5230\u571F\u4E2D\u57F9\u517B\u4E86\u3002"
-    ShortDescription: "\u62FE\u8D77\u526A\u5200\uFF0C\u9760\u8FD1\u690D\u682A\u5E76\u6309\u4E0B\u6273\u673A\u952E\u4EE5\u526A\u51FA\u63D2\u679D"
-  - Description: 
-    ShortDescription: "\u5C06\u6210\u529F\u751F\u6839\u7684\u690D\u682A\u79FB\u683D\u5230\u571F\u4E2D\u57F9\u517B"
-  - Description: 
-    ShortDescription: "\u5C06\u76C6\u683D\u79FB\u5165\u9634\u6697\u5904"
+  - Description: 'Basically we will try cultivating strawberries by cutting.
+
+      Select
+      stolon seedlings with 2-3 expanded leaves.'
+    ShortDescription: Pick up the shears, approach the plant and press the trigger
+      to cut the cuttings
+  - Description: Soak the lower end of the stolon seedlings in clean water for 10-12
+      hours, then soak in a growth regulator for 10-12 hours to obtain adventitious
+      roots;
+    ShortDescription: Place the cut runners into the culture medium
+  - Description: "Insert the adventitious roots into the seedbed, and maintain a
+      ground temperature of 10-20\u2103.\n"
+    ShortDescription: Transplant the seedlings with adventitious roots into the seedbed
