@@ -3703,7 +3703,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1557928541511260465}
   - component: {fileID: 8532496766248570461}
-  - component: {fileID: 7812048423691621643}
   - component: {fileID: 305430091733185904}
   - component: {fileID: 8860773104028973609}
   - component: {fileID: 8679253150189555594}
@@ -3723,7 +3722,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8773924952262778548}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.38268346, z: 0, w: 0.9238795}
+  m_LocalRotation: {x: 0, y: -0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: -0.4, y: 0, z: -0.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3744,51 +3743,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 377763afcc2858646bc1cde2f8293e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Data: {fileID: 0}
+  Data: {fileID: 11400000, guid: 68657aab044e92a4aaa56ee787bfc545, type: 2}
   ModelParent: {fileID: 0}
   InfoController: {fileID: 3916199540777465891}
   TutController: {fileID: 2663608949613841277}
   CurrentStep: 0
---- !u!114 &7812048423691621643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8773924952262778548}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 536d24579fd224a4aa974c384792dbd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ExeOnEnable:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8532496766248570461}
-        m_TargetAssemblyTypeName: PlantController, Assembly-CSharp
-        m_MethodName: Initialization
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8532496766248570461}
-        m_TargetAssemblyTypeName: PlantController, Assembly-CSharp
-        m_MethodName: StartTutorial
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  Delay: 0
 --- !u!114 &305430091733185904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3813,7 +3772,19 @@ MonoBehaviour:
       m_Calls: []
   OnFirstHoverEnter:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8532496766248570461}
+        m_TargetAssemblyTypeName: PlantController, Assembly-CSharp
+        m_MethodName: Initialization
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnLastHoverExit:
     m_PersistentCalls:
       m_Calls: []

@@ -23,7 +23,7 @@ public partial class MainController : MonoBehaviour
             
             transform.Find("Flow").GetComponent<VXR_Flow>().GoToID("tutorial");
         
-            controller.Initialization();
+            controller.StartTutorial();
         }
     }
 }
