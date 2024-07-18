@@ -25,7 +25,9 @@ public partial class MainController : MonoBehaviour
 
     private void Start()
     {
-        RecoverPose();
+        // RecoverPose();
+        
+        FirstTimeEnterGame?.Invoke();
     }
 
     private void OnApplicationQuit()

@@ -47,7 +47,8 @@ public class PlantController : MonoBehaviour
         
         CurrentStep = 0;
         if (Data.Tutorial == null || Data.Tutorial.Count == 0) return;
-        
+
+        TutController.PlantData = Data;
         TutController.Refresh(CurrentStep);
         WorkbenchCanvasController.CallUpSubtitle(Data.Tutorial[CurrentStep].ShortDescription);
         
@@ -76,4 +77,11 @@ public class PlantController : MonoBehaviour
         
         TutController.gameObject.SetActive(true);
     }
+
+    public void EndTutorial()
+    {
+        WorkbenchCanvasController.HideSubtitle();
+        TutController.gameObject.SetActive(false);
+    }
+        
 }

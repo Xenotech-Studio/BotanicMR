@@ -9,7 +9,8 @@ public class GrowableLeaf : MonoBehaviour
     public GameObject Root;
     public GameObject FullPlant;
     public UnityEvent SetStep1;
-
+    public UnityEvent EndTut;
+    
     public void Start()
     {
         
@@ -20,7 +21,7 @@ public class GrowableLeaf : MonoBehaviour
         if (other.TryGetComponent(out WaterBucket waterBucket))
         {
             Root.SetActive(true);
-            SetStep1.Invoke();
+            SetStep1?.Invoke();
         }
 
         if (other.TryGetComponent(out SoilHolder soilHolder) && soilHolder.SoilFull)
@@ -29,6 +30,8 @@ public class GrowableLeaf : MonoBehaviour
             {
                 FullPlant.SetActive(true);
                 Root.SetActive(false);
+                
+                EndTut?.Invoke();
             }
         }
     }
