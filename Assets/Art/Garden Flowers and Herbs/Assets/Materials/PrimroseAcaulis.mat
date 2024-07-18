@@ -207,7 +207,7 @@ Material:
     - _Cull: 0
     - _CullMode: 2
     - _CullModeForward: 2
-    - _Cutoff: 0.3
+    - _Cutoff: 0.161
     - _DepthOffsetEnable: 0
     - _DetailAlbedoMapScale: 1
     - _DetailAlbedoScale: 1
@@ -322,9 +322,9 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 0.16862746, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 0.16862741, a: 1}
     - _DiffusionProfileAsset: {r: -0.000000018268624, g: 5.092776e-36, b: 1.3309719e+9,
         a: -1.6697111e+26}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
