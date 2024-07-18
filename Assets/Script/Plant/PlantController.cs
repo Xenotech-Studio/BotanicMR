@@ -32,6 +32,7 @@ public class PlantController : MonoBehaviour
 
     public void StartTutorial()
     {
+        WorkbenchCanvasController.HideSubtitle();
         InfoController.gameObject.SetActive(false);
         
         CurrentStep = 0;
@@ -43,8 +44,22 @@ public class PlantController : MonoBehaviour
     
     public void NextStep()
     {
+        WorkbenchCanvasController.HideSubtitle();
+        
         CurrentStep++;
         TutController.Refresh(CurrentStep);
         WorkbenchCanvasController.CallUpSubtitle(Data.Tutorial[CurrentStep].ShortDescription);
+    }
+
+    public void SetStepTo(int step)
+    {
+        WorkbenchCanvasController.HideSubtitle();
+        InfoController.gameObject.SetActive(false);
+
+        CurrentStep = step;
+        TutController.Refresh(CurrentStep);
+        WorkbenchCanvasController.CallUpSubtitle(Data.Tutorial[CurrentStep].ShortDescription);
+        
+        TutController.gameObject.SetActive(true);
     }
 }

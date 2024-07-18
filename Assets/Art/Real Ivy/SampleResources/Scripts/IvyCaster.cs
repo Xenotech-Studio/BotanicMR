@@ -83,5 +83,16 @@ namespace Dynamite3D.RealIvy
 
 			return res;
 		}
+		
+		public void ClearAllIvy()
+		{
+			foreach(IvyController ivy in ivys)
+			{
+				if (ivy != null && ivy.gameObject != null)
+				{
+					Destroy(ivy.gameObject);
+				}
+			}
+		}
 	}
 }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 using UnityEngine;
 
 namespace DataSystem
@@ -20,8 +21,34 @@ namespace DataSystem
         
         public List<PlantProgressData> PlantProgressDataList = new List<PlantProgressData>();
         
+        public List<PlantProgressData> PlantProgressDataList2 = new List<PlantProgressData>();
+        
+        public List<PlantProgressData> PlantProgressDataList3 = new List<PlantProgressData>();
+        
+        [JsonIgnore]
+        public List<List<PlantProgressData>> AllPlantProgressDataLists => new List<List<PlantProgressData>>
+        {
+            PlantProgressDataList, 
+            PlantProgressDataList2, 
+            PlantProgressDataList3
+        };
+        
         public int Money;
         
         public DateTime LastLoginTime;
+        
+        #if UNITY_EDITOR
+        [UnityEditor.MenuItem("XenoSDK/Reset Game Progress Data")]
+        public static void Reset()
+        {
+            Instance.WorkbenchPose = null;
+            Instance.PlantProgressDataList.Clear();
+            Instance.PlantProgressDataList2.Clear();
+            Instance.PlantProgressDataList3.Clear();
+            Instance.Money = 0;
+            Instance.LastLoginTime = DateTime.Now;
+            Instance.Serialization();
+        }
+        #endif
     }
 }
