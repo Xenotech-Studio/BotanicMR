@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3255db3554287594c90ee6def03a1a7e, type: 3}
+  m_Name: MorningGlory
+  m_EditorClassIdentifier: 
+  Id: 2
+  Name: Morning Glory
+  BotanicalName: Ipomoea nil
+  Description: 'Annual or perennial vine, the whole plant has short hairs. Therefore,
+    morning glories are generally planted in spring and bloom in summer and autumn.
+    They come in many varieties and are common ornamental plants. The fruit is ovoid
+    and can be used in medicine.
+
+    Each morning glory flower has only a short
+    lifespan of one day, usually blooming in the early morning and gradually closing
+    by noon, hence they are also called "Asagao" (morning face).'
+  Price: 30
+  Prefab: {fileID: 0}
+  SunlightDegree: 1
+  SunlightDescription: Full Sunlight
+  WateringDegree: 0.4
+  WateringDescription: Every 1-2 weeks
+  TemperatureDegree: 0.65
+  TemperatureDescription: "25 ~ 32\u2103"
+  Tutorial:
+  - Description: Before sowing seeds in a pot or hanging basket, ensure that the
+      bottom of the pot has holes. This step is crucial to protect the seeds or prevent
+      seedlings from rotting due to poor drainage. A common technique is to place
+      some pumice, perlite, or gravel at the bottom of the pot, then add soil on
+      top to improve drainage and aeration.
+    ShortDescription: Use a shovel to scoop soil into the pot
+  - Description: Generally, large-flowered plants need extra space to expand. We
+      can leave morning glory seeds on the surface rather than burying them deep
+      into the soil.
+    ShortDescription: Place the morning glory seeds on the soil surface
+  - Description: Morning glories are climbing plants, which means they will need
+      a trellis to twine around and grow upwards. Typically, a long stick inserted
+      into the soil is sufficient. Morning glory seeds need light to germinate, so
+      you can sow them in a sunny location.
+    ShortDescription: Place the trellis in the flower pot

@@ -22,7 +22,7 @@ MonoBehaviour:
   Prefab: {fileID: 0}
   SunlightDegree: 1
   SunlightDescription: Full Sunlight
-  WateringDegree: 0.7
+  WateringDegree: 0.85
   WateringDescription: Twice a Week
   TemperatureDegree: 0.65
   TemperatureDescription: "18 ~ 27\u2103"
